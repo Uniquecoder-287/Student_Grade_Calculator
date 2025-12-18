@@ -1,0 +1,62 @@
+TEST CASES: Student Grade Calculator
+====================================
+
+--- CATEGORY 1: VALID INPUTS (Grading Logic) ---
+
+Test Case 1.1: Grade A (Lower Boundary)
+- Input Name: Alex
+- Input Marks: 90
+- Expected Result: Grade A | Message: "Outstanding!..."
+
+Test Case 1.2: Grade A (Upper Boundary)
+- Input Name: Alex
+- Input Marks: 100
+- Expected Result: Grade A | Message: "Outstanding!..."
+
+Test Case 1.3: Grade B
+- Input Name: Sam
+- Input Marks: 85
+- Expected Result: Grade B | Message: "Very Good!..."
+
+Test Case 1.4: Grade C
+- Input Name: Jordan
+- Input Marks: 72
+- Expected Result: Grade C | Message: "Good job!..."
+
+Test Case 1.5: Grade D
+- Input Name: Taylor
+- Input Marks: 60
+- Expected Result: Grade D | Message: "You passed!..."
+
+Test Case 1.6: Grade F (Lower Boundary)
+- Input Name: Casey
+- Input Marks: 0
+- Expected Result: Grade F | Message: "Don't give up!..."
+
+--- CATEGORY 2: INVALID INPUTS (Input Validation) ---
+
+Test Case 2.1: Out of Range (High)
+- Input Marks: 105
+- Expected Result: Error message "Please enter a number between 0 and 100" and prompt for input again.
+
+Test Case 2.2: Out of Range (Low)
+- Input Marks: -5
+- Expected Result: Error message "Please enter a number between 0 and 100" and prompt for input again.
+
+Test Case 2.3: Non-Numeric Input (String)
+- Input Marks: "Eighty"
+- Expected Result: Error message "Please enter a numeric value" and prompt for input again.
+
+Test Case 2.4: Special Characters
+- Input Marks: @#%
+- Expected Result: Error message "Please enter a numeric value" and prompt for input again.
+
+--- CATEGORY 3: EDGE CASES ---
+
+Test Case 3.1: Float/Decimal Input
+- Input Marks: 89.5
+- Expected Result: Should be accepted (depending on code logic, 89.5 might stay B or round up).
+
+Test Case 3.2: Empty Input
+- Input Marks: (Press Enter)
+- Expected Result: Error message "Please enter a numeric value" and prompt for input again.
